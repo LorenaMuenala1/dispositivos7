@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">movil_2</string>
+    <string name="username">asd</string>
+    <string name="boton">login</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Bienvenido a mi primer Fragment</string>
+
+</resources>

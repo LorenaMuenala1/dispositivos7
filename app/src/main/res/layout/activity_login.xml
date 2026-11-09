@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.Login">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/banner"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="-2dp"
+        tools:ignore="MissingConstraints" />
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:layout_marginLeft="20dp"
+        app:cardCornerRadius="20dp"
+        style="@style/MyCard"
+        android:layout_marginRight="20dp"
+        app:cardElevation="12dp"
+        android:backgroundTint="#E6FAFC"
+        app:layout_constraintTop_toTopOf="@+id/imageView"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+             <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="0dp"
+                android:fontFamily="sans-serif-black"
+                android:gravity="center"
+                android:text="Login "
+                android:textSize="24sp">
+
+            </TextView>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Username">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/usernameTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp">
+            </com.google.android.material.textfield.TextInputEditText>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:expandedHintEnabled="false"
+                android:hint="password">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/textImput2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:padding="15dp">
+            </com.google.android.material.textfield.TextInputEditText>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-black"
+                android:gravity="end"
+                android:text="Forgot your password">
+
+
+            </TextView>
+
+            <Button
+                android:id="@+id/boton1"
+                android:layout_width="match_parent"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:layout_margin="18dp"
+                android:backgroundTint="@color/boton"
+                android:drawableLeft="@drawable/account_box_24_ic"
+                android:drawableTint="@color/white"
+                android:drawablePadding="60dp"
+                android:text="Login">
+
+
+            </Button>
+            <TextView
+                android:id="@+id/texto1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Don`t have a account  "
+                android:gravity="center"
+                >
+            </TextView>
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
